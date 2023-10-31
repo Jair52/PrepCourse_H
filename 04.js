@@ -14,6 +14,18 @@ function numeroSimetrico(num) {
 
   // Tu código:
 
+  var numString = num.toString();
+  var longitud = numString.length;
+
+  for(i = 0; i < Math.floor(longitud/2); i++){
+    if(numString[i] !== numString[longitud - i - 1]){
+      return false;
+    }
+    else{
+      return true;
+    }
+  }
+
 }
 
 // No modifiques nada debajo de esta linea //
